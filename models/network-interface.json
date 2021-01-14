@@ -12,7 +12,7 @@
         },
         "mtu": {"type": "number"},
         "state": {
-            "type": "string", 
+            "type": "string",
             "enum": ["NO-CARRIER","UP","DOWN","UNKNOWN"]
         },
         "DeviceType": {
@@ -20,19 +20,21 @@
             "enum": ["ethernet", "wifi", "bridge", "loopback", "tun"]
         },
         "MacAddress": {
-            "$ref": "https://smart-data-models.github.io/dataModel.Device/device-schema.json#/definitions/MacAddressType"
+            "$ref": "https://raw.githubusercontent.com/jicarretero/Schemas.GUARD/main/common-definitions.json#/definitions/MacAddressType"
         },
         "IPv4Addresses": {
             "type": "array",
             "items": {
-                "$ref": "https://smart-data-models.github.io/dataModel.Device/device-schema.json#/definitions/IPv4AddressType"
+                "$ref": "https://raw.githubusercontent.com/jicarretero/Schemas.GUARD/main/common-definitions.json#/definitions/IPv4AddressType"
             }
         },
         "IPv6Addresses": {
             "type": "array",
             "items": {
-                "$ref": "https://smart-data-models.github.io/dataModel.Device/device-schema.json#/definitions/IPv6AddressType"
+                "$ref": "https://raw.githubusercontent.com/jicarretero/Schemas.GUARD/main/common-definitions.json#/definitions/IPv6AddressType"
             }
         }
-    }
+    },
+    "required": ["id", "name"],
+    "additionalProperties": false
 }

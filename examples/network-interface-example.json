@@ -4,5 +4,6 @@
     "mtu": 1500,
     "MacAddress": "a2:bc:14:43:ff:43",
     "IPv4Addresses": ["255.168.84.255/15"],
-    "IPv6Addresses": ["fe80::8f3b:1216:853b:7368/128"]
+    "IPv6Addresses": ["fe80::8f3b:1216:853b:7368/128"],
+    "op": "esto debe dar error"
 }
