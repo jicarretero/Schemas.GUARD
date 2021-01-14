@@ -5,4 +5,351 @@
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
 !_TAG_PROGRAM_VERSION	0.0.0	//
+$id	common-definitions.json	/^  "$id": "https:\/\/smart-data-models.github.io\/dataModel.Device\/device-schema.json",$/;"	s
+$id	common-schema.json	/^  "$id": "https:\/\/smart-data-models.github.io\/data-models\/common-schema.json",$/;"	s
+$id	disk-partition.json	/^  "$id": "https:\/\/smart-data-models.github.io\/dataModel.Device\/device-schema.json",$/;"	s
+$id	models/bare-metal-server.json	/^    "$id": "https:\/\/raw.githubusercontent.com\/jicarretero\/DataModels\/master\/GA-Agent-defin/;"	s
+$id	models/disk-model.json	/^    "$id": "https:\/\/raw.githubusercontent.com\/jicarretero\/DataModels\/master\/GA-Agent-defin/;"	s
+$id	models/network-interface.json	/^    "$id": "https:\/\/raw.githubusercontent.com\/jicarretero\/DataModels\/master\/GA-Agent-defin/;"	s
+$id	models/software-artifact.json	/^    "$id": "https:\/\/raw.githubusercontent.com\/jicarretero\/DataModels\/master\/GA-Agent-defin/;"	s
+$id	software-artifact.json	/^  "$id": "https:\/\/smart-data-models.github.io\/dataModel.Device\/device-schema.json",$/;"	s
+$ref	common-schema.json	/^              "$ref": "#\/definitions\/email"$/;"	s	object:definitions.Contact-Commons.properties.contactPoint.properties.email
+$ref	common-schema.json	/^              "$ref": "#\/definitions\/email"$/;"	s	object:definitions.Person-Commons.properties.person.properties.email
+$ref	common-schema.json	/^            "$ref": "https:\/\/smart-data-models.github.io\/data-models\/common-schema.json#\/de/;"	s	object:definitions.GSMA-Commons.properties.owner.items
+$ref	common-schema.json	/^          "$ref": "#\/definitions\/EntityIdentifierType"$/;"	s	object:definitions.GSMA-Commons.properties.id
+$ref	common-schema.json	/^          "$ref": "http:\/\/geojson.org\/schema\/Geometry.json#",$/;"	s	object:definitions.Location-Commons.properties.location
+$ref	disk-partition.json	/^                      "$ref": "#definitions\/disk-partition"$/;"	s	object:definitions.disk.properties.diskPartitions.items
+$ref	models/bare-metal-server.json	/^            "$ref": "https:\/\/smart-data-models.github.io\/data-models\/common-schema.json#\/de/;"	s	object:properties.id
+$ref	models/disk-model.json	/^            "$ref": "https:\/\/smart-data-models.github.io\/data-models\/common-schema.json#\/de/;"	s	object:properties.id
+$ref	models/disk-model.json	/^        "oneOf": [{ "$ref": "file:\/\/\/definitions\/disk"}]$/;"	s	object:properties.oneOf.0
+$ref	models/network-interface.json	/^                "$ref": "https:\/\/smart-data-models.github.io\/dataModel.Device\/device-schema./;"	s	object:properties.IPv4Addresses.items
+$ref	models/network-interface.json	/^                "$ref": "https:\/\/smart-data-models.github.io\/dataModel.Device\/device-schema./;"	s	object:properties.IPv6Addresses.items
+$ref	models/network-interface.json	/^            "$ref": "https:\/\/smart-data-models.github.io\/data-models\/common-schema.json#\/de/;"	s	object:properties.id
+$ref	models/network-interface.json	/^            "$ref": "https:\/\/smart-data-models.github.io\/dataModel.Device\/device-schema.json/;"	s	object:properties.MacAddress
+$ref	models/software-artifact.json	/^            "$ref": "https:\/\/smart-data-models.github.io\/data-models\/common-schema.json#\/de/;"	s	object:properties.id
+$schema	common-definitions.json	/^  "$schema": "http:\/\/json-schema.org\/schema#",$/;"	s
+$schema	common-schema.json	/^  "$schema": "http:\/\/json-schema.org\/schema#",$/;"	s
+$schema	disk-partition.json	/^  "$schema": "http:\/\/json-schema.org\/schema#",$/;"	s
+$schema	models/bare-metal-server.json	/^    "$schema": "http:\/\/json-schema.org\/schema#",$/;"	s
+$schema	models/disk-model.json	/^    "$schema": "http:\/\/json-schema.org\/schema#",$/;"	s
+$schema	models/network-interface.json	/^    "$schema": "http:\/\/json-schema.org\/schema#",$/;"	s
+$schema	models/software-artifact.json	/^    "$schema": "http:\/\/json-schema.org\/schema#",$/;"	s
+$schema	software-artifact.json	/^  "$schema": "http:\/\/json-schema.org\/schema#",$/;"	s
+0	common-schema.json	/^                  "Monday",$/;"	s	array:definitions.DateTime-Commons.properties.openingHoursSpecification.items.properties.dayOfWeek.enum
+0	common-schema.json	/^                {$/;"	o	array:definitions.GSMA-Commons.properties.seeAlso.oneOf.0.items
+0	common-schema.json	/^            {$/;"	o	array:definitions.GSMA-Commons.properties.seeAlso.oneOf
+0	common-schema.json	/^        {$/;"	o	array:definitions.EntityIdentifierType.anyOf
+0	examples/disk-example.json	/^        {"name": "\/dev\/nvme0n1p1", "size": 0.26},$/;"	o	array:partitions
+0	examples/network-interface-example.json	/^    "IPv4Addresses": ["255.168.84.255\/15"],$/;"	s	array:IPv4Addresses
+0	examples/network-interface-example.json	/^    "IPv6Addresses": ["fe80::8f3b:1216:853b:7368\/128"]$/;"	s	array:IPv6Addresses
+0	models/disk-model.json	/^        "oneOf": [{ "$ref": "file:\/\/\/definitions\/disk"}]$/;"	o	array:properties.oneOf
+0	models/network-interface.json	/^            "enum": ["NO-CARRIER","UP","DOWN","UNKNOWN"]$/;"	s	array:properties.state.enum
+0	models/network-interface.json	/^            "enum": ["ethernet", "wifi", "bridge", "loopback", "tun"]$/;"	s	array:properties.DeviceType.enum
+1	common-schema.json	/^                  "Tuesday",$/;"	s	array:definitions.DateTime-Commons.properties.openingHoursSpecification.items.properties.dayOfWeek.enum
+1	common-schema.json	/^            {$/;"	o	array:definitions.GSMA-Commons.properties.seeAlso.oneOf
+1	common-schema.json	/^        {$/;"	o	array:definitions.EntityIdentifierType.anyOf
+1	examples/disk-example.json	/^        {"name": "\/dev\/nvme0n1p2", "size": 0.016},$/;"	o	array:partitions
+1	models/network-interface.json	/^            "enum": ["NO-CARRIER","UP","DOWN","UNKNOWN"]$/;"	s	array:properties.state.enum
+1	models/network-interface.json	/^            "enum": ["ethernet", "wifi", "bridge", "loopback", "tun"]$/;"	s	array:properties.DeviceType.enum
+2	common-schema.json	/^                  "Wednesday",$/;"	s	array:definitions.DateTime-Commons.properties.openingHoursSpecification.items.properties.dayOfWeek.enum
+2	examples/disk-example.json	/^        {"name": "\/dev\/nvme0n1p3", "size": 154.5},$/;"	o	array:partitions
+2	models/network-interface.json	/^            "enum": ["NO-CARRIER","UP","DOWN","UNKNOWN"]$/;"	s	array:properties.state.enum
+2	models/network-interface.json	/^            "enum": ["ethernet", "wifi", "bridge", "loopback", "tun"]$/;"	s	array:properties.DeviceType.enum
+3	common-schema.json	/^                  "Thursday",$/;"	s	array:definitions.DateTime-Commons.properties.openingHoursSpecification.items.properties.dayOfWeek.enum
+3	examples/disk-example.json	/^        {"name": "\/dev\/nvme0n1p4", "size": 0.482},$/;"	o	array:partitions
+3	models/network-interface.json	/^            "enum": ["NO-CARRIER","UP","DOWN","UNKNOWN"]$/;"	s	array:properties.state.enum
+3	models/network-interface.json	/^            "enum": ["ethernet", "wifi", "bridge", "loopback", "tun"]$/;"	s	array:properties.DeviceType.enum
+4	common-schema.json	/^                  "Friday",$/;"	s	array:definitions.DateTime-Commons.properties.openingHoursSpecification.items.properties.dayOfWeek.enum
+4	examples/disk-example.json	/^        {"name": "\/dev\/nvme0n1p5", "size": 16},$/;"	o	array:partitions
+4	models/network-interface.json	/^            "enum": ["ethernet", "wifi", "bridge", "loopback", "tun"]$/;"	s	array:properties.DeviceType.enum
+5	common-schema.json	/^                  "Saturday",$/;"	s	array:definitions.DateTime-Commons.properties.openingHoursSpecification.items.properties.dayOfWeek.enum
+5	examples/disk-example.json	/^        {"name": "\/dev\/nvme0n1p6", "size": 305.7}$/;"	o	array:partitions
+6	common-schema.json	/^                  "Sunday",$/;"	s	array:definitions.DateTime-Commons.properties.openingHoursSpecification.items.properties.dayOfWeek.enum
+7	common-schema.json	/^                  "PublicHolidays"$/;"	s	array:definitions.DateTime-Commons.properties.openingHoursSpecification.items.properties.dayOfWeek.enum
+Contact-Commons	common-schema.json	/^    "Contact-Commons": {$/;"	o	object:definitions
+DateTime-Commons	common-schema.json	/^    "DateTime-Commons": {$/;"	o	object:definitions
+DateYearLess	common-schema.json	/^    "DateYearLess": {$/;"	o	object:definitions
+DeviceType	models/network-interface.json	/^        "DeviceType": {$/;"	o	object:properties
+EntityIdentifierType	common-schema.json	/^    "EntityIdentifierType": {$/;"	o	object:definitions
+GSMA-Commons	common-schema.json	/^    "GSMA-Commons": {$/;"	o	object:definitions
+IPv4AddressType	common-definitions.json	/^      "IPv4AddressType": {$/;"	o	object:definitions
+IPv4Addresses	examples/network-interface-example.json	/^    "IPv4Addresses": ["255.168.84.255\/15"],$/;"	a
+IPv4Addresses	models/network-interface.json	/^        "IPv4Addresses": {$/;"	o	object:properties
+IPv6AddressType	common-definitions.json	/^      "IPv6AddressType": {$/;"	o	object:definitions
+IPv6Addresses	examples/network-interface-example.json	/^    "IPv6Addresses": ["fe80::8f3b:1216:853b:7368\/128"]$/;"	a
+IPv6Addresses	models/network-interface.json	/^        "IPv6Addresses": {$/;"	o	object:properties
+Location-Commons	common-schema.json	/^    "Location-Commons": {$/;"	o	object:definitions
+MacAddress	examples/network-interface-example.json	/^    "MacAddress": "a2:bc:14:43:ff:43",$/;"	s
+MacAddress	models/network-interface.json	/^        "MacAddress": {$/;"	o	object:properties
+MacAddressType	common-definitions.json	/^      "MacAddressType": { $/;"	o	object:definitions
+Person-Commons	common-schema.json	/^    "Person-Commons": {$/;"	o	object:definitions
+PhysicalObject-Commons	common-schema.json	/^    "PhysicalObject-Commons": {$/;"	o	object:definitions
 Schemas.GUARD	README.md	/^# Schemas.GUARD$/;"	c
+additionalName	common-schema.json	/^            "additionalName": {$/;"	o	object:definitions.Person-Commons.properties.person.properties
+address	common-schema.json	/^        "address": {$/;"	o	object:definitions.Location-Commons.properties
+addressCountry	common-schema.json	/^            "addressCountry": {$/;"	o	object:definitions.Location-Commons.properties.address.properties
+addressLocality	common-schema.json	/^            "addressLocality": {$/;"	o	object:definitions.Location-Commons.properties.address.properties
+addressRegion	common-schema.json	/^            "addressRegion": {$/;"	o	object:definitions.Location-Commons.properties.address.properties
+alternateName	common-schema.json	/^        "alternateName": {$/;"	o	object:definitions.GSMA-Commons.properties
+annotations	common-schema.json	/^        "annotations": {$/;"	o	object:definitions.PhysicalObject-Commons.properties
+anyOf	common-schema.json	/^      "anyOf": [$/;"	a	object:definitions.EntityIdentifierType
+areaServed	common-schema.json	/^            "areaServed": {$/;"	o	object:definitions.Location-Commons.properties.address.properties
+areaServed	common-schema.json	/^        "areaServed": {$/;"	o	object:definitions.Location-Commons.properties
+closes	common-schema.json	/^              "closes": {$/;"	o	object:definitions.DateTime-Commons.properties.openingHoursSpecification.items.properties
+color	common-schema.json	/^        "color": {$/;"	o	object:definitions.PhysicalObject-Commons.properties
+contactPoint	common-schema.json	/^        "contactPoint": {$/;"	o	object:definitions.Contact-Commons.properties
+contactType	common-schema.json	/^            "contactType": {$/;"	o	object:definitions.Contact-Commons.properties.contactPoint.properties
+cpus	models/bare-metal-server.json	/^        "cpus": {$/;"	o	object:properties
+dataProvider	common-schema.json	/^        "dataProvider": {$/;"	o	object:definitions.GSMA-Commons.properties
+dateCreated	common-schema.json	/^        "dateCreated": {$/;"	o	object:definitions.GSMA-Commons.properties
+dateModified	common-schema.json	/^        "dateModified": {$/;"	o	object:definitions.GSMA-Commons.properties
+dayOfWeek	common-schema.json	/^              "dayOfWeek": {$/;"	o	object:definitions.DateTime-Commons.properties.openingHoursSpecification.items.properties
+definitions	common-definitions.json	/^  "definitions": { $/;"	o
+definitions	common-schema.json	/^  "definitions": {$/;"	o
+definitions	disk-partition.json	/^  "definitions": {$/;"	o
+description	common-definitions.json	/^  "description": "Common defintions to describe a Network Interface",$/;"	s
+description	common-schema.json	/^              "description": "Property. Model:'https:\/\/schema.org\/Text'. An additional name f/;"	s	object:definitions.Person-Commons.properties.person.properties.additionalName
+description	common-schema.json	/^              "description": "Property. Model:'https:\/\/schema.org\/Text'. Family name. In the /;"	s	object:definitions.Person-Commons.properties.person.properties.familyName
+description	common-schema.json	/^              "description": "Property. Model:'https:\/\/schema.org\/Text'. Given name. In the U/;"	s	object:definitions.Person-Commons.properties.person.properties.givenName
+description	common-schema.json	/^              "description": "Property. Model:'https:\/\/schema.org\/Text'. Given name. The tele/;"	s	object:definitions.Person-Commons.properties.person.properties.telephone
+description	common-schema.json	/^              "description": "Property. The country. For example, Spain. Model:'https:\/\/schema/;"	s	object:definitions.Location-Commons.properties.address.properties.addressCountry
+description	common-schema.json	/^              "description": "Property. The geographic area where a service or offered item is p/;"	s	object:definitions.Location-Commons.properties.address.properties.areaServed
+description	common-schema.json	/^              "description": "Property. The locality in which the street address is, and which i/;"	s	object:definitions.Location-Commons.properties.address.properties.addressLocality
+description	common-schema.json	/^              "description": "Property. The post office box number for PO box addresses. For exa/;"	s	object:definitions.Location-Commons.properties.address.properties.postOfficeBoxNumber
+description	common-schema.json	/^              "description": "Property. The postal code. For example, Spain. Model:'https:\/\/sc/;"	s	object:definitions.Location-Commons.properties.address.properties.postalCode
+description	common-schema.json	/^              "description": "Property. The region in which the locality is, and which is in the/;"	s	object:definitions.Location-Commons.properties.address.properties.addressRegion
+description	common-schema.json	/^              "description": "Property. The street address. Model:'https:\/\/schema.org\/Text'"$/;"	s	object:definitions.Location-Commons.properties.address.properties.streetAddress
+description	common-schema.json	/^          "description": "Geoproperty. Geojson reference to the item"$/;"	s	object:definitions.Location-Commons.properties.location
+description	common-schema.json	/^          "description": "Property. A List containing a JSON encoded sequence of characters refe/;"	s	object:definitions.GSMA-Commons.properties.owner
+description	common-schema.json	/^          "description": "Property. A description of this item"$/;"	s	object:definitions.GSMA-Commons.properties.description
+description	common-schema.json	/^          "description": "Property. A sequence of characters giving the original source of the e/;"	s	object:definitions.GSMA-Commons.properties.source
+description	common-schema.json	/^          "description": "Property. A sequence of characters identifying the provider of the har/;"	s	object:definitions.GSMA-Commons.properties.dataProvider
+description	common-schema.json	/^          "description": "Property. A structured value providing information about the opening h/;"	s	object:definitions.DateTime-Commons.properties.openingHoursSpecification
+description	common-schema.json	/^          "description": "Property. An alternative name for this item"$/;"	s	object:definitions.GSMA-Commons.properties.alternateName
+description	common-schema.json	/^          "description": "Property. An image of the item. Model:'https:\/\/schema.org\/URL'"$/;"	s	object:definitions.PhysicalObject-Commons.properties.image
+description	common-schema.json	/^          "description": "Property. Annotations about the item. Model:'https:\/\/schema.org\/Tex/;"	s	object:definitions.PhysicalObject-Commons.properties.annotations
+description	common-schema.json	/^          "description": "Property. Entity creation timestamp. This will usually be allocated by/;"	s	object:definitions.GSMA-Commons.properties.dateCreated
+description	common-schema.json	/^          "description": "Property. Identifier format of any NGSI entity"$/;"	s	object:definitions.EntityIdentifierType.anyOf.0
+description	common-schema.json	/^          "description": "Property. Identifier format of any NGSI entity"$/;"	s	object:definitions.EntityIdentifierType.anyOf.1
+description	common-schema.json	/^          "description": "Property. Model:'https:\/\/schema.org\/ContactPoint'. The details to c/;"	s	object:definitions.Contact-Commons.properties.contactPoint
+description	common-schema.json	/^          "description": "Property. Model:'https:\/\/schema.org\/Person'. A person (alive, dead,/;"	s	object:definitions.Person-Commons.properties.person
+description	common-schema.json	/^          "description": "Property. The color of the product. Model:'https:\/\/schema.org\/color/;"	s	object:definitions.PhysicalObject-Commons.properties.color
+description	common-schema.json	/^          "description": "Property. The geographic area where a service or offered item is provi/;"	s	object:definitions.Location-Commons.properties.areaServed
+description	common-schema.json	/^          "description": "Property. The mailing address.",$/;"	s	object:definitions.Location-Commons.properties.address
+description	common-schema.json	/^          "description": "Property. The name of this item."$/;"	s	object:definitions.GSMA-Commons.properties.name
+description	common-schema.json	/^          "description": "Property. Timestamp of the last modification of the entity. This will /;"	s	object:definitions.GSMA-Commons.properties.dateModified
+description	common-schema.json	/^          "description": "Property. list of uri pointing to additional resources about the item"/;"	s	object:definitions.GSMA-Commons.properties.seeAlso
+description	common-schema.json	/^        "description": {$/;"	o	object:definitions.GSMA-Commons.properties
+description	common-schema.json	/^      "description": "Property. All contact elements in data models unless explicitly stated acc/;"	s	object:definitions.Contact-Commons
+description	common-schema.json	/^      "description": "Property. All date-time elements in data models unless explicitly stated a/;"	s	object:definitions.DateTime-Commons
+description	common-schema.json	/^      "description": "Property. All properties to identify a person according to schema.org",$/;"	s	object:definitions.Person-Commons
+description	common-schema.json	/^      "description": "Property. Email address of owner."$/;"	s	object:definitions.email
+description	common-schema.json	/^      "description": "Property. Unique identifier of the entity"$/;"	s	object:definitions.EntityIdentifierType
+description	disk-partition.json	/^  "description": "Common defintions to describe a Network Interface",$/;"	s
+description	models/network-interface.json	/^            "description": "Name of the Network Interface Device in the Operating System"$/;"	s	object:properties.name
+description	software-artifact.json	/^  "description": "Describe the Software Properties associated with a piece of Software installed/;"	s
+disk	disk-partition.json	/^      "disk": {$/;"	o	object:definitions
+disk-partition	disk-partition.json	/^      "disk-partition": {$/;"	o	object:definitions
+diskPartitions	disk-partition.json	/^              "diskPartitions": {$/;"	o	object:definitions.disk.properties
+email	common-schema.json	/^            "email": {$/;"	o	object:definitions.Contact-Commons.properties.contactPoint.properties
+email	common-schema.json	/^            "email": {$/;"	o	object:definitions.Person-Commons.properties.person.properties
+email	common-schema.json	/^    "email": {$/;"	o	object:definitions
+enum	common-schema.json	/^                "enum": [$/;"	a	object:definitions.DateTime-Commons.properties.openingHoursSpecification.items.properties.dayOfWeek
+enum	models/network-interface.json	/^            "enum": ["NO-CARRIER","UP","DOWN","UNKNOWN"]$/;"	a	object:properties.state
+enum	models/network-interface.json	/^            "enum": ["ethernet", "wifi", "bridge", "loopback", "tun"]$/;"	a	object:properties.DeviceType
+familyName	common-schema.json	/^            "familyName": {$/;"	o	object:definitions.Person-Commons.properties.person.properties
+format	common-schema.json	/^                  "format": "uri"$/;"	s	object:definitions.GSMA-Commons.properties.seeAlso.oneOf.0.items.0
+format	common-schema.json	/^                "format": "date-time"$/;"	s	object:definitions.DateTime-Commons.properties.openingHoursSpecification.items.properties.validFrom
+format	common-schema.json	/^                "format": "date-time"$/;"	s	object:definitions.DateTime-Commons.properties.openingHoursSpecification.items.properties.validThrough
+format	common-schema.json	/^                "format": "time"$/;"	s	object:definitions.DateTime-Commons.properties.openingHoursSpecification.items.properties.closes
+format	common-schema.json	/^                "format": "time"$/;"	s	object:definitions.DateTime-Commons.properties.openingHoursSpecification.items.properties.opens
+format	common-schema.json	/^              "format": "uri"$/;"	s	object:definitions.Contact-Commons.properties.contactPoint.properties.url
+format	common-schema.json	/^              "format": "uri"$/;"	s	object:definitions.GSMA-Commons.properties.seeAlso.oneOf.1
+format	common-schema.json	/^          "format": "date-time",$/;"	s	object:definitions.GSMA-Commons.properties.dateCreated
+format	common-schema.json	/^          "format": "date-time",$/;"	s	object:definitions.GSMA-Commons.properties.dateModified
+format	common-schema.json	/^          "format": "uri",$/;"	s	object:definitions.EntityIdentifierType.anyOf.1
+format	common-schema.json	/^          "format": "uri",$/;"	s	object:definitions.PhysicalObject-Commons.properties.image
+format	common-schema.json	/^      "format": "idn-email",$/;"	s	object:definitions.email
+givenName	common-schema.json	/^            "givenName": {$/;"	o	object:definitions.Person-Commons.properties.person.properties
+hostname	models/bare-metal-server.json	/^        "hostname": {$/;"	o	object:properties
+id	common-schema.json	/^        "id": {$/;"	o	object:definitions.GSMA-Commons.properties
+id	examples/network-interface-example.json	/^    "id": "NetworkInterface1",$/;"	s
+id	models/bare-metal-server.json	/^        "id": {$/;"	o	object:properties
+id	models/disk-model.json	/^        "id": {$/;"	o	object:properties
+id	models/network-interface.json	/^        "id": {$/;"	o	object:properties
+id	models/software-artifact.json	/^        "id": {$/;"	o	object:properties
+image	common-schema.json	/^        "image": {$/;"	o	object:definitions.PhysicalObject-Commons.properties
+items	common-schema.json	/^              "items": [$/;"	a	object:definitions.GSMA-Commons.properties.seeAlso.oneOf.0
+items	common-schema.json	/^          "items": {$/;"	o	object:definitions.DateTime-Commons.properties.openingHoursSpecification
+items	common-schema.json	/^          "items": {$/;"	o	object:definitions.GSMA-Commons.properties.owner
+items	common-schema.json	/^          "items": {$/;"	o	object:definitions.PhysicalObject-Commons.properties.annotations
+items	disk-partition.json	/^                  "items": {$/;"	o	object:definitions.disk.properties.diskPartitions
+items	models/bare-metal-server.json	/^            "items": {$/;"	o	object:properties.networkInterfaces
+items	models/network-interface.json	/^            "items": {$/;"	o	object:properties.IPv4Addresses
+items	models/network-interface.json	/^            "items": {$/;"	o	object:properties.IPv6Addresses
+items	models/software-artifact.json	/^            "items": {$/;"	o	object:properties.openTCPPorts
+items	models/software-artifact.json	/^            "items": {$/;"	o	object:properties.openUDPPorts
+location	common-schema.json	/^        "location": {$/;"	o	object:definitions.Location-Commons.properties
+maxLength	common-schema.json	/^          "maxLength": 256,$/;"	n	object:definitions.EntityIdentifierType.anyOf.0
+minItems	common-schema.json	/^              "minItems": 1,$/;"	n	object:definitions.GSMA-Commons.properties.seeAlso.oneOf.0
+minItems	common-schema.json	/^          "minItems": 1$/;"	n	object:definitions.DateTime-Commons.properties.openingHoursSpecification
+minLength	common-schema.json	/^          "minLength": 1,$/;"	n	object:definitions.EntityIdentifierType.anyOf.0
+mtu	examples/network-interface-example.json	/^    "mtu": 1500,$/;"	n
+mtu	models/network-interface.json	/^        "mtu": {"type": "number"},$/;"	o	object:properties
+name	common-schema.json	/^            "name": {$/;"	o	object:definitions.Contact-Commons.properties.contactPoint.properties
+name	common-schema.json	/^        "name": {$/;"	o	object:definitions.GSMA-Commons.properties
+name	disk-partition.json	/^              "name": {$/;"	o	object:definitions.disk-partition.properties
+name	disk-partition.json	/^              "name": {$/;"	o	object:definitions.disk.properties
+name	examples/disk-example.json	/^        {"name": "\/dev\/nvme0n1p1", "size": 0.26},$/;"	s	object:partitions.0
+name	examples/disk-example.json	/^        {"name": "\/dev\/nvme0n1p2", "size": 0.016},$/;"	s	object:partitions.1
+name	examples/disk-example.json	/^        {"name": "\/dev\/nvme0n1p3", "size": 154.5},$/;"	s	object:partitions.2
+name	examples/disk-example.json	/^        {"name": "\/dev\/nvme0n1p4", "size": 0.482},$/;"	s	object:partitions.3
+name	examples/disk-example.json	/^        {"name": "\/dev\/nvme0n1p5", "size": 16},$/;"	s	object:partitions.4
+name	examples/disk-example.json	/^        {"name": "\/dev\/nvme0n1p6", "size": 305.7}$/;"	s	object:partitions.5
+name	examples/disk-example.json	/^    "name": "mmcblk0",$/;"	s
+name	examples/network-interface-example.json	/^    "name": "eth0", $/;"	s
+name	models/network-interface.json	/^        "name": {$/;"	o	object:properties
+name	models/software-artifact.json	/^        "name": {$/;"	o	object:properties
+networkInterfaces	models/bare-metal-server.json	/^        "networkInterfaces": {$/;"	o	object:properties
+oneOf	common-schema.json	/^          "oneOf": [$/;"	a	object:definitions.GSMA-Commons.properties.seeAlso
+oneOf	models/disk-model.json	/^        "oneOf": [{ "$ref": "file:\/\/\/definitions\/disk"}]$/;"	a	object:properties
+openTCPPorts	models/software-artifact.json	/^        "openTCPPorts": {$/;"	o	object:properties
+openUDPPorts	models/software-artifact.json	/^        "openUDPPorts": {$/;"	o	object:properties
+openingHoursSpecification	common-schema.json	/^        "openingHoursSpecification": {$/;"	o	object:definitions.DateTime-Commons.properties
+opens	common-schema.json	/^              "opens": {$/;"	o	object:definitions.DateTime-Commons.properties.openingHoursSpecification.items.properties
+operatingSystem	models/bare-metal-server.json	/^        "operatingSystem": {$/;"	o	object:properties
+owner	common-schema.json	/^        "owner": {$/;"	o	object:definitions.GSMA-Commons.properties
+partitions	examples/disk-example.json	/^    "partitions": [$/;"	a
+pattern	common-definitions.json	/^          "pattern": "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\\\.){3}(25[0-5]|2[0-4][0-9]|[01]/;"	s	object:definitions.IPv4AddressType
+pattern	common-definitions.json	/^          "pattern": "^(([0-9a-fA-F]{1,4}:){7,7}[0-9a-fA-F]{1,4}|([0-9a-fA-F]{1,4}:){1,7}:|([0-9/;"	s	object:definitions.IPv6AddressType
+pattern	common-definitions.json	/^          "pattern": "^([0-9a-fA-F]{2}:){5}[0-9a-fA-F]{2}$"$/;"	s	object:definitions.MacAddressType
+pattern	common-schema.json	/^          "pattern": "^[\\\\w\\\\-\\\\.\\\\{\\\\}\\\\$\\\\+\\\\*\\\\[\\\\]`|~^@!,:\\\\\\\\]+$",$/;"	s	object:definitions.EntityIdentifierType.anyOf.0
+pattern	common-schema.json	/^      "pattern": "^--((0[13578]|1[02])-31|(0[1,3-9]|1[0-2])-30|(0\\\\d|1[0-2])-([0-2]\\\\d))$"$/;"	s	object:definitions.DateYearLess
+person	common-schema.json	/^        "person": {$/;"	o	object:definitions.Person-Commons.properties
+postOfficeBoxNumber	common-schema.json	/^            "postOfficeBoxNumber": {$/;"	o	object:definitions.Location-Commons.properties.address.properties
+postalCode	common-schema.json	/^            "postalCode": {$/;"	o	object:definitions.Location-Commons.properties.address.properties
+properties	common-schema.json	/^            "properties": {$/;"	o	object:definitions.DateTime-Commons.properties.openingHoursSpecification.items
+properties	common-schema.json	/^          "properties": {$/;"	o	object:definitions.Contact-Commons.properties.contactPoint
+properties	common-schema.json	/^          "properties": {$/;"	o	object:definitions.Location-Commons.properties.address
+properties	common-schema.json	/^          "properties": {$/;"	o	object:definitions.Person-Commons.properties.person
+properties	common-schema.json	/^      "properties": {$/;"	o	object:definitions.Contact-Commons
+properties	common-schema.json	/^      "properties": {$/;"	o	object:definitions.DateTime-Commons
+properties	common-schema.json	/^      "properties": {$/;"	o	object:definitions.GSMA-Commons
+properties	common-schema.json	/^      "properties": {$/;"	o	object:definitions.Location-Commons
+properties	common-schema.json	/^      "properties": {$/;"	o	object:definitions.Person-Commons
+properties	common-schema.json	/^      "properties": {$/;"	o	object:definitions.PhysicalObject-Commons
+properties	disk-partition.json	/^          "properties": {$/;"	o	object:definitions.disk
+properties	disk-partition.json	/^          "properties": {$/;"	o	object:definitions.disk-partition
+properties	models/bare-metal-server.json	/^    "properties": {$/;"	o
+properties	models/disk-model.json	/^    "properties": {$/;"	o
+properties	models/network-interface.json	/^    "properties": {$/;"	o
+properties	models/software-artifact.json	/^    "properties": {$/;"	o
+properties	software-artifact.json	/^  "properties": {$/;"	o
+ram	models/bare-metal-server.json	/^        "ram": {$/;"	o	object:properties
+seeAlso	common-schema.json	/^        "seeAlso": {$/;"	o	object:definitions.GSMA-Commons.properties
+size	disk-partition.json	/^              "size": {$/;"	o	object:definitions.disk-partition.properties
+size	disk-partition.json	/^              "size": {$/;"	o	object:definitions.disk.properties
+size	examples/disk-example.json	/^        {"name": "\/dev\/nvme0n1p1", "size": 0.26},$/;"	n	object:partitions.0
+size	examples/disk-example.json	/^        {"name": "\/dev\/nvme0n1p2", "size": 0.016},$/;"	n	object:partitions.1
+size	examples/disk-example.json	/^        {"name": "\/dev\/nvme0n1p3", "size": 154.5},$/;"	n	object:partitions.2
+size	examples/disk-example.json	/^        {"name": "\/dev\/nvme0n1p4", "size": 0.482},$/;"	n	object:partitions.3
+size	examples/disk-example.json	/^        {"name": "\/dev\/nvme0n1p5", "size": 16},$/;"	n	object:partitions.4
+size	examples/disk-example.json	/^        {"name": "\/dev\/nvme0n1p6", "size": 305.7}$/;"	n	object:partitions.5
+size	examples/disk-example.json	/^    "size": 476.96,$/;"	n
+softwareInstalled	models/bare-metal-server.json	/^        "softwareInstalled": {$/;"	o	object:properties
+source	common-schema.json	/^        "source": {$/;"	o	object:definitions.GSMA-Commons.properties
+state	models/network-interface.json	/^        "state": {$/;"	o	object:properties
+streetAddress	common-schema.json	/^            "streetAddress": {$/;"	o	object:definitions.Location-Commons.properties.address.properties
+telephone	common-schema.json	/^            "telephone": {$/;"	o	object:definitions.Contact-Commons.properties.contactPoint.properties
+telephone	common-schema.json	/^            "telephone": {$/;"	o	object:definitions.Person-Commons.properties.person.properties
+title	common-definitions.json	/^  "title": "Network Interface Schema",$/;"	s
+title	common-schema.json	/^  "title": "Common definitions for  Harmonized Data Models",$/;"	s
+title	disk-partition.json	/^  "title": "Network Interface Schema",$/;"	s
+title	software-artifact.json	/^  "title": "Software Artifact Schema",$/;"	s
+type	common-definitions.json	/^          "type": "string", $/;"	s	object:definitions.MacAddressType
+type	common-definitions.json	/^          "type": "string",$/;"	s	object:definitions.IPv4AddressType
+type	common-definitions.json	/^          "type": "string",$/;"	s	object:definitions.IPv6AddressType
+type	common-schema.json	/^                  "type": "string",$/;"	s	object:definitions.GSMA-Commons.properties.seeAlso.oneOf.0.items.0
+type	common-schema.json	/^                "type": "string",$/;"	s	object:definitions.DateTime-Commons.properties.openingHoursSpecification.items.properties.closes
+type	common-schema.json	/^                "type": "string",$/;"	s	object:definitions.DateTime-Commons.properties.openingHoursSpecification.items.properties.dayOfWeek
+type	common-schema.json	/^                "type": "string",$/;"	s	object:definitions.DateTime-Commons.properties.openingHoursSpecification.items.properties.opens
+type	common-schema.json	/^                "type": "string",$/;"	s	object:definitions.DateTime-Commons.properties.openingHoursSpecification.items.properties.validFrom
+type	common-schema.json	/^                "type": "string",$/;"	s	object:definitions.DateTime-Commons.properties.openingHoursSpecification.items.properties.validThrough
+type	common-schema.json	/^              "type": "array",$/;"	s	object:definitions.GSMA-Commons.properties.seeAlso.oneOf.0
+type	common-schema.json	/^              "type": "string"$/;"	s	object:definitions.Contact-Commons.properties.contactPoint.properties.contactType
+type	common-schema.json	/^              "type": "string"$/;"	s	object:definitions.Contact-Commons.properties.contactPoint.properties.name
+type	common-schema.json	/^              "type": "string"$/;"	s	object:definitions.Contact-Commons.properties.contactPoint.properties.telephone
+type	common-schema.json	/^              "type": "string",$/;"	s	object:definitions.Contact-Commons.properties.contactPoint.properties.url
+type	common-schema.json	/^              "type": "string",$/;"	s	object:definitions.GSMA-Commons.properties.seeAlso.oneOf.1
+type	common-schema.json	/^              "type": "string",$/;"	s	object:definitions.Location-Commons.properties.address.properties.addressCountry
+type	common-schema.json	/^              "type": "string",$/;"	s	object:definitions.Location-Commons.properties.address.properties.addressLocality
+type	common-schema.json	/^              "type": "string",$/;"	s	object:definitions.Location-Commons.properties.address.properties.addressRegion
+type	common-schema.json	/^              "type": "string",$/;"	s	object:definitions.Location-Commons.properties.address.properties.areaServed
+type	common-schema.json	/^              "type": "string",$/;"	s	object:definitions.Location-Commons.properties.address.properties.postOfficeBoxNumber
+type	common-schema.json	/^              "type": "string",$/;"	s	object:definitions.Location-Commons.properties.address.properties.postalCode
+type	common-schema.json	/^              "type": "string",$/;"	s	object:definitions.Location-Commons.properties.address.properties.streetAddress
+type	common-schema.json	/^              "type": "string",$/;"	s	object:definitions.Person-Commons.properties.person.properties.additionalName
+type	common-schema.json	/^              "type": "string",$/;"	s	object:definitions.Person-Commons.properties.person.properties.familyName
+type	common-schema.json	/^              "type": "string",$/;"	s	object:definitions.Person-Commons.properties.person.properties.givenName
+type	common-schema.json	/^              "type": "string",$/;"	s	object:definitions.Person-Commons.properties.person.properties.telephone
+type	common-schema.json	/^            "type": "string"$/;"	s	object:definitions.PhysicalObject-Commons.properties.annotations.items
+type	common-schema.json	/^          "type": "array",$/;"	s	object:definitions.DateTime-Commons.properties.openingHoursSpecification
+type	common-schema.json	/^          "type": "array",$/;"	s	object:definitions.GSMA-Commons.properties.owner
+type	common-schema.json	/^          "type": "array",$/;"	s	object:definitions.PhysicalObject-Commons.properties.annotations
+type	common-schema.json	/^          "type": "object",$/;"	s	object:definitions.Contact-Commons.properties.contactPoint
+type	common-schema.json	/^          "type": "object",$/;"	s	object:definitions.Location-Commons.properties.address
+type	common-schema.json	/^          "type": "object",$/;"	s	object:definitions.Person-Commons.properties.person
+type	common-schema.json	/^          "type": "string",$/;"	s	object:definitions.EntityIdentifierType.anyOf.0
+type	common-schema.json	/^          "type": "string",$/;"	s	object:definitions.EntityIdentifierType.anyOf.1
+type	common-schema.json	/^          "type": "string",$/;"	s	object:definitions.GSMA-Commons.properties.alternateName
+type	common-schema.json	/^          "type": "string",$/;"	s	object:definitions.GSMA-Commons.properties.dataProvider
+type	common-schema.json	/^          "type": "string",$/;"	s	object:definitions.GSMA-Commons.properties.dateCreated
+type	common-schema.json	/^          "type": "string",$/;"	s	object:definitions.GSMA-Commons.properties.dateModified
+type	common-schema.json	/^          "type": "string",$/;"	s	object:definitions.GSMA-Commons.properties.description
+type	common-schema.json	/^          "type": "string",$/;"	s	object:definitions.GSMA-Commons.properties.name
+type	common-schema.json	/^          "type": "string",$/;"	s	object:definitions.GSMA-Commons.properties.source
+type	common-schema.json	/^          "type": "string",$/;"	s	object:definitions.Location-Commons.properties.areaServed
+type	common-schema.json	/^          "type": "string",$/;"	s	object:definitions.PhysicalObject-Commons.properties.color
+type	common-schema.json	/^          "type": "string",$/;"	s	object:definitions.PhysicalObject-Commons.properties.image
+type	common-schema.json	/^      "type": "object",$/;"	s	object:definitions.DateTime-Commons
+type	common-schema.json	/^      "type": "object",$/;"	s	object:definitions.GSMA-Commons
+type	common-schema.json	/^      "type": "object",$/;"	s	object:definitions.Location-Commons
+type	common-schema.json	/^      "type": "object",$/;"	s	object:definitions.PhysicalObject-Commons
+type	common-schema.json	/^      "type": "string",$/;"	s	object:definitions.DateYearLess
+type	common-schema.json	/^      "type": "string",$/;"	s	object:definitions.email
+type	disk-partition.json	/^                  "type": "array",$/;"	s	object:definitions.disk.properties.diskPartitions
+type	disk-partition.json	/^                  "type": "number"$/;"	s	object:definitions.disk-partition.properties.size
+type	disk-partition.json	/^                  "type": "number"$/;"	s	object:definitions.disk.properties.size
+type	disk-partition.json	/^                  "type": "string"$/;"	s	object:definitions.disk-partition.properties.name
+type	disk-partition.json	/^                  "type": "string"$/;"	s	object:definitions.disk.properties.name
+type	disk-partition.json	/^          "type": "object",$/;"	s	object:definitions.disk
+type	disk-partition.json	/^          "type": "object",$/;"	s	object:definitions.disk-partition
+type	models/bare-metal-server.json	/^                "type": "string"$/;"	s	object:properties.networkInterfaces.items
+type	models/bare-metal-server.json	/^            "type": "array",$/;"	s	object:properties.networkInterfaces
+type	models/bare-metal-server.json	/^            "type": "number"$/;"	s	object:properties.cpus
+type	models/bare-metal-server.json	/^            "type": "number"$/;"	s	object:properties.ram
+type	models/bare-metal-server.json	/^            "type": "string"$/;"	s	object:properties.hostname
+type	models/bare-metal-server.json	/^            "type": "string"$/;"	s	object:properties.operatingSystem
+type	models/bare-metal-server.json	/^            "type": "string"$/;"	s	object:properties.softwareInstalled
+type	models/bare-metal-server.json	/^    "type": "object",$/;"	s
+type	models/disk-model.json	/^    "type": "object",$/;"	s
+type	models/network-interface.json	/^            "type": "array",$/;"	s	object:properties.IPv4Addresses
+type	models/network-interface.json	/^            "type": "array",$/;"	s	object:properties.IPv6Addresses
+type	models/network-interface.json	/^            "type": "string", $/;"	s	object:properties.state
+type	models/network-interface.json	/^            "type": "string",$/;"	s	object:properties.DeviceType
+type	models/network-interface.json	/^            "type": "string",$/;"	s	object:properties.name
+type	models/network-interface.json	/^        "mtu": {"type": "number"},$/;"	s	object:properties.mtu
+type	models/network-interface.json	/^    "type": "object",$/;"	s
+type	models/software-artifact.json	/^                "type": "int"$/;"	s	object:properties.openTCPPorts.items
+type	models/software-artifact.json	/^                "type": "int"$/;"	s	object:properties.openUDPPorts.items
+type	models/software-artifact.json	/^            "type": "array",$/;"	s	object:properties.openTCPPorts
+type	models/software-artifact.json	/^            "type": "array",$/;"	s	object:properties.openUDPPorts
+type	models/software-artifact.json	/^            "type": "string"$/;"	s	object:properties.name
+type	models/software-artifact.json	/^            "type": "string"$/;"	s	object:properties.vendor
+type	models/software-artifact.json	/^            "type": "string"$/;"	s	object:properties.version
+type	models/software-artifact.json	/^    "type": "object",$/;"	s
+url	common-schema.json	/^            "url": {$/;"	o	object:definitions.Contact-Commons.properties.contactPoint.properties
+validFrom	common-schema.json	/^              "validFrom": {$/;"	o	object:definitions.DateTime-Commons.properties.openingHoursSpecification.items.properties
+validThrough	common-schema.json	/^              "validThrough": {$/;"	o	object:definitions.DateTime-Commons.properties.openingHoursSpecification.items.properties
+vendor	models/software-artifact.json	/^        "vendor": {$/;"	o	object:properties
+version	models/software-artifact.json	/^        "version": {$/;"	o	object:properties
