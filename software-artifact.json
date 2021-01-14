@@ -1,0 +1,9 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://smart-data-models.github.io/dataModel.Device/device-schema.json",
+  "title": "Software Artifact Schema",
+  "description": "Describe the Software Properties associated with a piece of Software installed",
+  "properties": {
+
+  }
+}

@@ -1,0 +1,32 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "$id": "https://raw.githubusercontent.com/jicarretero/DataModels/master/GA-Agent-definition.json",
+    "type": "object",
+    "properties": {
+        "id": {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType"
+        },
+        "name": {
+            "type": "string"
+        },
+        "version": {
+            "type": "string"
+        },
+        "openTCPPorts": {
+            "type": "array",
+            "items": {
+                "type": "int"
+            }
+        },
+        "openUDPPorts": {
+            "type": "array",
+            "items": {
+                "type": "int"
+            }
+        },
+        "vendor": {
+            "type": "string"
+        }
+    }
+}
+

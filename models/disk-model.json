@@ -1,0 +1,11 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "$id": "https://raw.githubusercontent.com/jicarretero/DataModels/master/GA-Agent-definition.json",
+    "type": "object",
+    "properties": {
+        "id": {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType"
+        },
+        "oneOf": [{ "$ref": "file:///definitions/disk"}]
+    }
+}
