@@ -1,13 +1,11 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "$id": "https://raw.githubusercontent.com/jicarretero/Schemas.GUARD/main/models/disk-model.json",
-    "type": "object",
-    "properties": {
-        "id": {
-            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType"
+    "allOf": [
+        {"id": {
+                "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType"
+            }
         },
-        "disk": {
-            "$ref": "https://raw.githubusercontent.com/jicarretero/Schemas.GUARD/main/disk-partition.json#/definitions/disk"
-        }
-    }
+        {"$ref": "https://raw.githubusercontent.com/jicarretero/Schemas.GUARD/main/disk-partition.json#/definitions/disk"}
+    ]
 }

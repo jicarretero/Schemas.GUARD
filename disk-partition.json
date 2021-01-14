@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/schema#",
   "$id": "https://raw.githubusercontent.com/jicarretero/Schemas.GUARD/main/disk-partition.json",
-  "title": "Network Interface Schema",
-  "description": "Common defintions to describe a Network Interface",
+  "title": "Hard Disk device Schema",
+  "description": "Common defintions to describe a disk",
   "definitions": {
       "disk-partition": {
           "type": "object",
@@ -21,7 +21,10 @@
               "diskPartitions": {
                   "type": "array",
                   "items": {
-                      "$ref": "#definitions/disk-partition"
+                      "object": {
+                          "size": {"type": "number"},
+                          "name": {"type": "string"}
+                      }
                   }
               },
               "name": {
@@ -29,9 +32,12 @@
               },
               "size": {
                   "type": "number"
+              },
+              "id": {
+                "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType"
               }
-
-          }
+          },
+          "additionalProperties": false
       }
   }
 }

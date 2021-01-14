@@ -1,12 +1,13 @@
 {
-    "name": "mmcblk0",
-    "size": 476.96,
-    "partitions": [
-        {"name": "/dev/nvme0n1p1", "size": 0.26},
-        {"name": "/dev/nvme0n1p2", "size": 0.016},
-        {"name": "/dev/nvme0n1p3", "size": 154.5},
-        {"name": "/dev/nvme0n1p4", "size": 0.482},
-        {"name": "/dev/nvme0n1p5", "size": 16},
-        {"name": "/dev/nvme0n1p6", "size": 305.7}
-    ]
+        "name": "nvme0n1",
+        "size": 476.96,
+        "diskPartitions": [
+            {"name": "/dev/nvme0n1p1", "size": 0.26},
+            {"name": "/dev/nvme0n1p2", "size": 0.016},
+            {"name": "/dev/nvme0n1p3", "size": 154.5},
+            {"name": "/dev/nvme0n1p4", "size": 0.482},
+            {"name": "/dev/nvme0n1p5", "size": 16},
+            {"name": "/dev/nvme0n1p6", "size": 305.7}
+        ],
+        "id": "urn:HardDiskDevice:nvme0n1"
 }
