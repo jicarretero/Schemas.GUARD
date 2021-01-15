@@ -52,9 +52,9 @@
               "mtu": {"type": "number"},
               "state": {
                   "type": "string",
-                  "enum": ["NO-CARRIER","UP","DOWN","UNKNOWN"]
+                  "enum": ["NO-CARRIER","UP","DOWN","UNKNOWN", "LOWER_UP"]
               },
-              "DeviceType": {
+              "deviceType": {
                   "type": "string",
                   "enum": ["ethernet", "wifi", "bridge", "loopback", "tun"]
               },
