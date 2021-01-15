@@ -1,0 +1,81 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://raw.githubusercontent.com/jicarretero/Schemas.GUARD/main/hardware-definitions.json",
+  "title": "Hard Disk device Schema",
+  "description": "Common defintions to describe a disk",
+  "definitions": {
+      "disk-partition": {
+          "type": "object",
+          "properties": {
+              "size": {
+                  "type": "number"
+              },
+              "name": {
+                  "type": "string"
+              }
+          }
+      },
+      "disk": {
+          "type": "object",
+          "properties": {
+              "diskPartitions": {
+                  "type": "array",
+                  "items": {
+                      "object": {
+                          "size": {"type": "number"},
+                          "name": {"type": "string"}
+                      }
+                  }
+              },
+              "name": {
+                  "type": "string"
+              },
+              "size": {
+                  "type": "number"
+              },
+              "id": {
+                "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType"
+              }
+          },
+          "additionalProperties": false
+      },
+      "NetworkInterface": {
+          "type": "object",
+          "properties": {
+              "id": {
+                  "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType"
+              },
+              "name": {
+                  "type": "string",
+                  "description": "Name of the Network Interface Device in the Operating System"
+              },
+              "mtu": {"type": "number"},
+              "state": {
+                  "type": "string",
+                  "enum": ["NO-CARRIER","UP","DOWN","UNKNOWN"]
+              },
+              "DeviceType": {
+                  "type": "string",
+                  "enum": ["ethernet", "wifi", "bridge", "loopback", "tun"]
+              },
+              "MacAddress": {
+                  "$ref": "https://raw.githubusercontent.com/jicarretero/Schemas.GUARD/main/simple-type-definitions.json#/definitions/MacAddressType"
+              },
+              "IPv4Addresses": {
+                  "type": "array",
+                  "items": {
+                      "$ref": "https://raw.githubusercontent.com/jicarretero/Schemas.GUARD/main/simple-type-definitions.json#/definitions/IPv4AddressType"
+                  }
+              },
+              "IPv6Addresses": {
+                  "type": "array",
+                  "items": {
+                      "$ref": "https://raw.githubusercontent.com/jicarretero/Schemas.GUARD/main/simple-type-definitions.json#/definitions/IPv6AddressType"
+                  }
+              }
+          },
+          "required": ["id", "name"],
+          "additionalProperties": false
+      }
+  }
+}

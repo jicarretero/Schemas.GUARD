@@ -12,7 +12,7 @@
         "networkInterfaces": {
             "type": "array",
             "items": {
-                "type": "string"
+                "$ref": "https://raw.githubusercontent.com/jicarretero/Schemas.GUARD/main/hardware-definitions.json#/definitions/NetworkInterface"
             }
         },
         "operatingSystem": {
@@ -26,6 +26,14 @@
         },
         "softwareInstalled": {
             "type": "string"
+        },
+        "diskDevices": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/jicarretero/Schemas.GUARD/main/hardware-definitions.json#/definitions/disk"
+            }
         }
-    }
+    },
+    "additionalProperties": false,
+    "required": ["hostname", "operatingSystem", "cpus", "ram"]
 }

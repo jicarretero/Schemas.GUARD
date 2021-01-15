@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "$id": "https://raw.githubusercontent.com/jicarretero/Schemas.GUARD/main/common-definitions.json",
+  "$id": "https://raw.githubusercontent.com/jicarretero/Schemas.GUARD/main/simple-type-definitions.json",
   "title": "Network Interface Schema",
   "description": "Common defintions to describe a Network Interface",
   "definitions": { 

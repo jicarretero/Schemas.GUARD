@@ -9,5 +9,5 @@
             {"name": "/dev/nvme0n1p5", "size": 16},
             {"name": "/dev/nvme0n1p6", "size": 305.7}
         ],
-        "id": "urn:HardDiskDevice:nvme0n1"
+        "id": "urn:HardDiskDevice:nvme0n1",
 }
